@@ -82,9 +82,9 @@ waitress
 ```
 正在加载 OCR 模型...
 OCR 模型加载成功！
-在 http://0.0.0.0:5001 上启动 OCR 服务...
+在 http://0.0.0.0:10000 上启动 OCR 服务...
 ```
-这表示服务正在监听 `5001` 端口，随时准备接收识别请求。
+这表示服务正在监听 `10000` 端口，随时准备接收识别请求。
 
 ### 生产环境 (推荐)
 
@@ -92,12 +92,12 @@ OCR 模型加载成功！
 
 **使用 Waitress:**
 ```bash
-(venv) waitress-serve --host=0.0.0.0 --port=5001 ocr_server:app
+(venv) waitress-serve --host=0.0.0.0 --port=10000 ocr_server:app
 ```
 
 **使用 Gunicorn (Linux/macOS):**
 ```bash
-(venv) gunicorn --workers 4 --bind 0.0.0.0:5001 ocr_server:app
+(venv) gunicorn --workers 4 --bind 0.0.0.0:10000 ocr_server:app
 ```
 
 ---

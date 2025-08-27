@@ -1,7 +1,7 @@
 import requests
 
 # API 服务器地址
-OCR_API_URL = 'http://localhost:5001/recognize'
+OCR_API_URL = 'http://localhost:10000/recognize'
 # 测试图片路径
 IMAGE_PATH = 'debug/test_captcha.jpg'
 

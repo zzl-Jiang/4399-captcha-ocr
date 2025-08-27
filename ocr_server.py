@@ -79,5 +79,5 @@ def health_check():
 if __name__ == '__main__':
     # 使用 Waitress 来运行应用
     from waitress import serve
-    print("在 http://0.0.0.0:5001 上启动 OCR 服务...")
-    serve(app, host='0.0.0.0', port=5001)
+    print("在 http://0.0.0.0:10000 上启动 OCR 服务...")
+    serve(app, host='0.0.0.0', port=10000)
